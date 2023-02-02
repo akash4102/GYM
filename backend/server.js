@@ -30,7 +30,7 @@ app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(cors());
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://admin-akash:test123@cluster0.kbeh5dh.mongodb.net/userDB",{useNewUrlParser:true},function(err){
+mongoose.connect("Mongo_DB_URL",{useNewUrlParser:true},function(err){
     if(err){
         console.log(err.name,err.message);
     }
